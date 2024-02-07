@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameScene"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/time"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center_vertical"
+        android:hint="00:10"
+        android:paddingHorizontal="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:visibility="invisible"/>
+
+    <Chronometer
+        android:id="@+id/c_meter"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/time"
+        android:fontFamily="@font/inter_medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingHorizontal="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/lessTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:textSize="9sp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/money"
+        app:layout_constraintEnd_toStartOf="@+id/moneyCountView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/moneyCountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="3dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cell11"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell12"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell13"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell14"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="3dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/cell21"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell22"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell23"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell24"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="3dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cell31"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell32"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell33"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell34"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="3dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cell41"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell42"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell43"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell44"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="3dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cell51"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell52"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell53"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+            <ImageView
+                android:id="@+id/cell54"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="3dp"
+                android:background="@drawable/rounded_container"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="15dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:paddingHorizontal="50dp"
+        android:text="@string/hintGame"
+        android:textAlignment="center"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:textColor="@color/black" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

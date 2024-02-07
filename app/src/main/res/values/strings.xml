@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestProject</string>
+    <string name="game_logo">Game Logo №1</string>
+    <string name="lessTime">! less time, more reward</string>
+    <string name="hintGame">Keep matching up two the same object until there are no more to be paired and you clear the board.</string>
+    <string name="congratulation">[CONGRATULATION]</string>
+    <string name="won">[Great! You won!]</string>
+    <string name="playButton">PLAY</string>
+    <string name="doubleButton">Double Reward</string>
+</resources>
